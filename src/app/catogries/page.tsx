@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Catogries = () => {
 
@@ -17,7 +18,7 @@ const catogriesData = [
             <div className="collection">
                 {catogriesData.map((catogries)=> (
                     <div key={catogries.id} className="catogries-card">
-                        <img src={catogries.image} alt={catogries.name} />
+                        <Image src={catogries.image} alt={catogries.name} />
                         <h3>{catogries.name}</h3>
                         <p>{catogries.description}</p>
                         <div className="price">${catogries.price}</div>
